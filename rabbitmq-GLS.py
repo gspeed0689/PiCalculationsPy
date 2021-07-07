@@ -27,7 +27,7 @@ def arguments():
     parser.add_argument("-s", "--stepsize", default=1000000, type=int,
                         help="Step size is the number of numbers to be calculated in a single go, computers are fast, pick a reasonably big number (like 1 million)")
     parser.add_argument("-p", "--processnumber", type=int,
-                        help="Which process this program will run on. 0 = producer, 1>= calculator")
+                        help="Which process this program will run on. 0 : producer\n 1 : accumulator (broken)\n >=2 : calculator")
     args = parser.parse_args()
     
     bdb(1, "Arguments Parsed")
